@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sani Editzz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height: 1000px;
+            border: 2px solid black;
+            background-color:#252B42;
+            position: relative;
+;
+        }
+        .navbar{
+            width: 100;
+            height: 100px;
+            border: 2px solid brown;
+            position: relative;
+        }
+        #logo{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px solid greenyellow;
+            margin-top: 30px;
+            margin-left: 3%;
+            position: absolute;
+            color: white;
+            
+
+        }
+        .ul{
+            display: flex;
+            list-style: none;
+            border: 2px solid green;
+            /* position: absolute; */
+            margin-top: 40px;
+            margin-left: 15%;
+            padding: 0 1%;
+            
+            
+ 
+        }
+        .login{
+            width: 10%;
+            border: 2px solid pink;
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 80%;
+            padding-right: 2%;
+            display: flex;
+            padding-left: %;
+
+        }
+        li{
+            margin-left: 5%;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        .joinbtn{
+            border-radius: 5px;
+            padding: 15px 25px 15px 25px;
+            margin-top: -15px;
+            background-color: #23A6F0;
+            border: 1px solid #23A6F0;
+        }
+        .jointag{
+            color: white;
+            
+
+        }
+        .joinbtn:hover{
+            background-color: #252B42;
+            color: #23A6F0;
+        }
+        .jointag:hover{
+            color: #23A6F0;
+            border: #23A6F0;
+
+        }
+
+        button{
+            
+            margin-left: 2%;
+        }
+        .welcome{
+            position: absolute;
+            margin-left: 35%;
+            margin-top: 80px;
+            border: 2px solid blue;
+        }
+        h5{
+            color: #23A6F0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            
+        }
+        #head2{
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 70px;
+            text-align: center;
+            color: white;
+        }
+        #para1{
+            font-family: montserrat;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            color: white;
+        }
+        .quotebtn{
+            border-radius: 5px;
+            padding: 15px 40px 15px 40px;
+            gap: 10px;
+            background-color: #23A6F0;
+            margin-top: 45px;
+            margin-left: 15%;
+            border: 1px solid #23A6F0;
+        }
+        .quotebtn:hover{
+            background-color: #252B42;
+            color: #23A6F0;
+        }
+        .quotetag{
+            color: white;
+        }
+        .quotetag:hover{
+            color: #23A6F0;
+            border: #23A6F0;
+        }
+        .learnbtn{
+            border-radius: 5px;
+            padding: 15px 40px 15px 40px;
+            background-color: #23A6F0;
+            margin-top: 45px;
+            border: 1px solid #23A6F0;
+        }
+        .learnbtn:hover{
+            background-color: #252B42;
+            color: #23A6F0;
+        }
+        .learntag{
+            color: white;
+        }
+        .learntag:hover{
+            color: #23A6F0;
+            border: #23A6F0;
+        }
+        .cardbox{
+            width: 100%;
+            height: 300px;
+            border: 2px solid orangered;            
+            margin-top: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+        .cardbox > #cards{
+            border: 2px solid yellow;
+            width: 15%;
+            height: 300;
+            justify-content:center;
+            padding-left: 7%;
+            margin-left: 8%;
+            text-align: center;
+            background-color: white;
+
+            
+        }
+        .icon{
+            width: 10%;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 22px 19px 22px 19px;
+            margin-top: 40px;
+            margin-inline-start: -50px;
+
+        }
+        .head5{
+            margin-top: 20px;
+            margin-inline-start: -100%;
+            color: black;
+        }
+
+        .para2{
+            margin-top: 20px;
+            text-align: justify;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: -20%;
+            
+        }
+        .maintwo{
+            width: 100%;
+            height: 400px;
+            border: 2px solid tomato;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+
+        }
+        .twobox1{
+            width: 80%;
+            height: 300px;
+            border: 2px solid blueviolet;
+            justify-content: center;
+            position: absolute;
+            margin: 0 auto;
+            margin-top: 70px;
+            margin-left: 8%;
+            
+        }
+        .textbox{
+            width: 48%;
+            height: 250px;
+            border: 2px solid cornflowerblue;
+            float: left;
+            margin-left: %;
+            margin-top: 10px;
+
+
+        }
+        .imgbox{
+            width: 48%;
+            height: 250px;
+            border: 2px solid cornflowerblue;
+            float: left;
+            margin-left: 1%;
+            margin-top: 10px;
+            position: relative;
+
+        }
+        .text{
+            width: 80%;
+            height: 198px;
+            border: 2px solid gray;
+            margin-top: 50px;
+        }
+        .head3{
+            font-weight: 400;
+            font-size: 40px;
+            color: black;
+        }
+        .para3{
+            font-size: 14px;
+            font-weight: 400;
+            color: #737373;
+            line-height: 20px;
+            margin-top: 30px;
+        }
+        .lmore{
+            margin-top: 37px;
+            margin-left: -1%;
+        }
+        #moretag{
+            color: #23A6F0;
+            margin-top: 60vh;
+
+        }
+        .babies{
+            width: 60%;
+            height: 240px;
+            position: absolute;
+            margin-left: 30%;
+
+        }
+        .date1{
+            width: 12%;
+            height: 140px;
+            position: absolute;
+            margin-left: 55% ;
+            border: 2px solid palevioletred;
+
+        }
+        .dateone{
+            width: 90%;
+            height: 120px;
+            margin-top: 10px;
+        }
+        .date2{
+            width: 40%%;
+            height: 140px;
+            position: absolute;
+            margin-top: 215px ;
+            margin-left: 55% ;
+            border: 2px solid palevioletred;
+        }
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="navbar">
+        <h1 id="logo">Sani Editzz</h1>
+        <ul class="ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="login">
+            <a href="#">login</a>
+            <button class="joinbtn"><a class="jointag" href="#">JOIN us -></a></button>
+<!-- login ka close div -->
+        </div>
+<!-- navbar ka close div  -->
+    </div>
+    <div class="welcome">
+        <h5>welcome</h5>
+        <h1 id="head2">Selling on the
+            <br> internet like a pro</h1>
+        <br>
+        <br>
+        <p id="para1">We know how large object will act, but things on a
+            <br> small scale just do not act that way</p>
+            <button class="quotebtn"><a class="quotetag" href="#">Get Quote Now</a></button>
+            <button class="learnbtn"><a class="learntag" href="#">Learn More</a></button>
+
+
+
+<!-- welcome ka close div -->
+    </div>
+    <div class="cardbox">
+        <div id="cards">
+            <div class="icon" style="background-color: #FFDCD1;"> 
+                <img src="Icons/face-smile-regular.svg" alt="smile" width="30px" height="30px" style="margin-top: -5px; padding-top: -5px;" ></div>
+                <h5 class="head5">Training Courses</h5>
+                <br>
+                
+                <p class="para2">The gradual accumulation of<br> 
+                    information about atomic and <br>
+                    small-scale behaviour...</p>
+        </div>
+        <div id="cards">
+            <div class="icon" style="background-color: #B9EAA8;">
+            <img src="Icons/check-double-solid.svg" alt="check" width="30px" height="30px" style="margin-top: -5px; padding-top: -5px;">
+        </div>
+        <h5 class="head5">2,769 online courses</h5>
+        <p class="para2">The gradual accumulation of <br> 
+            information about atomic and <br> 
+            small-scale behaviour...</p>
+
+        </div>
+        <div id="cards" style="background-color: #23A6F0;">
+            <div class="icon" style="background-color: white;">
+                <img src="Icons/hard-drive-regular.svg" alt="drive" width="30px" height="30px" style="margin-top: -5px; padding-top: -5px;">
+            </div>
+            <h5 class="head5" style="color: white;">training Courses</h5>
+            <p class="para2" style="color: white;">The gradual accumulation of <br> 
+                information about atomic and <br>
+                small-scale behaviour...</p>
+        </div>
+
+<!-- cardbox ka close div -->
+    </div>
+<!-- main ka close dic -->
+</div> 
+<div class="maintwo">
+    <div class="twobox1">
+        <div class="textbox">
+            <div class="text">
+                <h2 class="head3">Packages that are
+                    <br>
+                    aprodable
+                </h2>
+                <p class="para3">Problems trying to resolve the conflict between <br>
+                    the two major realms of Classical physics: <br>
+                    Newtonian mechanics
+                </p>
+                <div class="lmore">
+                <a id="moretag" href="#">Learn More</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="imgbox">
+            <img class="babies" src="Images/babies.png" alt="babies">
+        </div>    
+        <div class="date1">
+            <img class="dateone" src="Images/date.png" alt="date">
+        </div>
+        <div class="date2">
+            <img class="datetwo" src="Images/date2.png" alt="date2">
+
+
+        </div>
+
+
+<!-- twomainbox ka close div          -->
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- maintwo ka close div -->
+</div>
+    
+</body>
+</html>
